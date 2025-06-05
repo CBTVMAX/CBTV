@@ -1,83 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBTV Max</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px 0;
-        }
-        img {
-            margin-top: 20px;
-        }
-        section {
-            margin-top: 40px;
-        }
-        .social-buttons {
-            margin-top: 30px;
-        }
-        .social-buttons a {
-            display: inline-block;
-            margin: 10px;
-            padding: 10px 20px;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .instagram { background-color: #E1306C; }
-        .whatsapp { background-color: #25D366; }
-        .facebook { background-color: #4267B2; }
-        .subscribe-button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 15px 30px;
-            background-color: #FF5722;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .subscribe-button:hover {
-            background-color: #E64A19;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CBTV Max</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000000, #434343);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      width: 150px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 1em;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-primary {
+      background-color: #ff5722;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ff5722;
+    }
+
+    .social {
+      margin: 20px 0;
+    }
+
+    .social .btn {
+      background-color: #fff;
+      color: #333;
+    }
+
+    .social .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #fff;
+    }
+
+    footer {
+      margin: 30px 0;
+      font-size: 0.8em;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
-
-<header>
+  <header>
     <h1>Bem-vindo à CBTV Max</h1>
-</header>
+    <div class="logo">
+      <img src="cbtvmax-logo.png" alt="Logo da CBTV Max">
+    </div>
+  </header>
 
-<img src="cbtvmax-logo.png" alt="Logo da CBTV Max" width="200">
-
-<section>
+  <main>
     <h2>Os melhores canais para você</h2>
     <p>Assine já e tenha acesso a milhares de conteúdos em HD, Full HD e 4K!</p>
 
-    <a href="https://wa.me/SEUNUMERO" target="_blank" class="subscribe-button">Assine Agora</a>
+    <a href="#" class="btn btn-primary">Assine Agora</a>
 
-    <div class="social-buttons">
-        <a href="https://www.instagram.com/SEUUSUARIO" target="_blank" class="instagram">Instagram</a>
-        <a href="https://wa.me/SEUNUMERO" target="_blank" class="whatsapp">WhatsApp</a>
-        <a href="https://www.facebook.com/SEUUSUARIO" target="_blank" class="facebook">Facebook</a>
+    <div class="social">
+      <a href="https://instagram.com" class="btn">Instagram</a>
+      <a href="https://wa.me/seunumerowhatsapp" class="btn">WhatsApp</a>
+      <a href="https://facebook.com" class="btn">Facebook</a>
     </div>
-</section>
+  </main>
 
-<footer>
-    <p>&copy; 2025 CBTV Max. Todos os direitos reservados.</p>
-</footer>
-
+  <footer>
+    &copy; 2025 CBTV Max. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
