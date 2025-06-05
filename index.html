@@ -1,70 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CBTV Max</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CBTV Max - Sua IPTV Premium</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #000; 
-      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1608016483037-f2829b708ba8?auto=format&fit=crop&w=1500&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
       text-align: center;
     }
-    .topo img {
-      max-width: 300px;
-      margin-top: 20px;
+
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px 0;
     }
-    .descricao {
+
+    .logo {
+      max-width: 200px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 20px 0 10px;
+      color: #ff1a1a;
+    }
+
+    .planos {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
       margin: 20px;
-      font-size: 1.2em;
-    }
-    .botoes a {
+      border-radius: 20px;
       display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
-      font-size: 1em;
-      border-radius: 25px;
+    }
+
+    .plano {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .whatsapp-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
       text-decoration: none;
-      color: #fff;
-      transition: transform 0.3s;
+      transition: background 0.3s ease;
     }
-    .botoes a:hover {
-      transform: scale(1.1);
-    }
-    .instagram { background: #C13584; }
-    .whatsapp { background: #25D366; }
-    .facebook { background: #3b5998; }
-    .assinar { background: #FF4500; }
-    footer {
-      margin: 20px 0;
-      font-size: 0.8em;
-      color: #888;
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5b;
     }
   </style>
 </head>
 <body>
 
-  <div class="topo">
-    <img src="sualogo.png" alt="Logo CBTV Max">
-  </div>
+  <header>
+    <img src="cbtvmax-logo.png" alt="Logo CBTV Max" class="logo" />
+  </header>
 
-  <div class="descricao">
-    <p>Os melhores canais em HD, Full HD e 4K!</p>
-    <p>Planos a partir de <strong>R$ 35,00</strong> até <strong>R$ 210,00</strong>.</p>
-  </div>
+  <main>
+    <h1>Assine Já a CBTV Max!</h1>
 
-  <div class="botoes">
-    <a href="https://seulink" class="assinar">Assine Agora</a>
-    <a href="https://instagram.com" class="instagram">Instagram</a>
-    <a href="https://wa.me/seunumerowhatsapp" class="whatsapp">WhatsApp</a>
-    <a href="https://facebook.com" class="facebook">Facebook</a>
-  </div>
+    <div class="planos">
+      <div class="plano">📺 Plano Mensal: R$ 25,00</div>
+      <div class="plano">📺 Trimestral: R$ 65,00</div>
+      <div class="plano">📺 Semestral: R$ 120,00</div>
+      <div class="plano">📺 Anual: R$ 210,00</div>
+    </div>
 
-  <footer>
-    &copy; 2025 CBTV Max. Todos os direitos reservados.
-  </footer>
+    <br />
+
+    <a class="whatsapp-btn" href="https://wa.me/557582675858" target="_blank">👉 Assine Já pelo WhatsApp</a>
+  </main>
 
 </body>
 </html>
