@@ -3,55 +3,117 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CBTV Max</title>
+  <title>CBTV Max - Sua TV Online em Alta Qualidade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
     body {
-      background-color: #0a0a0a;
-      color: #ffffff;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #000000, #1da851);
+      color: #fff;
       text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       padding: 40px 20px;
     }
+
+    header img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
     h1 {
-      font-size: 2.8em;
-      margin-top: 20px;
-      margin-bottom: 10px;
-      color: #00e0ff;
+      font-size: 2.5em;
+      color: #fff;
     }
-    img.logo {
-      width: 220px;
-      margin: 30px auto;
+
+    p {
+      font-size: 1.2em;
+      margin: 20px 0 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .btn {
+
+    .buttons a {
       display: inline-block;
+      padding: 12px 24px;
       margin: 10px;
-      padding: 14px 28px;
-      font-size: 1.1em;
+      border-radius: 30px;
+      text-decoration: none;
       color: white;
-      background-color: #25D366;
-      border: none;
-      border-radius: 10px;
-      text-decoration: none;
-    }
-    .btn:hover {
+      font-weight: 600;
       background-color: #1da851;
+      transition: 0.3s;
     }
-    a.link {
-      display: block;
-      margin-top: 20px;
-      color: #ffcc00;
-      font-weight: bold;
+
+    .buttons a:hover {
+      background-color: #148e42;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    /* Botão flutuante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 14px;
+      font-size: 26px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       text-decoration: none;
+      z-index: 999;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+    }
+
+    /* Responsivo */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1em;
+      }
     }
   </style>
+  <!-- Ícone do WhatsApp -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-  <img src="cbtvmax-logo.png" alt="CBTV Max Logo" class="logo" />
-  <h1>CBTV Max</h1>
-  <p>O seu IPTV com qualidade 4K, esportes, filmes e séries.</p>
 
-  <a href="https://wa.me/557582675858" class="btn" target="_blank">💬 Atendimento via WhatsApp</a>
+  <header>
+    <img src="cbtvmax-logo.png" alt="Logo CBTV Max"/>
+    <h1>CBTV Max</h1>
+    <p>A melhor experiência em IPTV com qualidade 4K, estabilidade e suporte completo. Assista o que quiser, onde quiser.</p>
+  </header>
 
-  <a class="link" href="https://instagram.com/cbtvmax" target="_blank">@cbtvmax no Instagram</a>
+  <div class="buttons">
+    <a href="https://wa.me/557582675858" target="_blank">Fale no WhatsApp</a>
+    <a href="https://instagram.com/cbtvmaxoficial" target="_blank">Nosso Instagram</a>
+  </div>
+
+  <a class="whatsapp-float" href="https://wa.me/557582675858" target="_blank" aria-label="Fale conosco no WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    © 2025 CBTV Max - Todos os direitos reservados.
+  </footer>
+
 </body>
-</html>
+  </html>
