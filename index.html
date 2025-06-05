@@ -35,21 +35,32 @@
     width: 150px;
     z-index: 1;
   }
-  button {
+  .btn-hero, .btn-whatsapp {
     margin-top: 20px;
     padding: 15px 30px;
     font-size: 1.2rem;
     border: none;
     border-radius: 30px;
-    background: #ff0057;
-    color: #fff;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
     z-index: 1;
   }
-  button:hover {
+  .btn-hero {
+    background: #ff0057;
+    color: #fff;
+  }
+  .btn-hero:hover {
     transform: scale(1.1);
     background: #ff3366;
+  }
+  .btn-whatsapp {
+    background: #25D366;
+    color: #fff;
+    margin-top: 10px;
+  }
+  .btn-whatsapp:hover {
+    transform: scale(1.1);
+    background: #1ebc5b;
   }
 </style>
 </head>
@@ -57,7 +68,10 @@
   <header>
     <img src="cbtv-lobo.png" alt="CBTV Max Logo" />
     <h1>“Até o último suspiro, lutaremos juntos”</h1>
-    <button>Entrar na batalha</button>
+    <button class="btn-hero">Entrar na batalha</button>
+    <a href="https://wa.me/557582675858" target="_blank">
+      <button class="btn-whatsapp">Assine já via WhatsApp</button>
+    </a>
   </header>
   <main style="padding: 2rem; text-align: center;">
     <h2>Prepare-se para o combate!</h2>
