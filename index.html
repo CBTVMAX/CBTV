@@ -6,108 +6,65 @@
   <title>CBTV Max</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #000000, #434343);
-      color: #fff;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #000; 
+      color: #fff;
       text-align: center;
     }
-
-    header {
-      padding: 40px 20px 20px;
+    .topo img {
+      max-width: 300px;
+      margin-top: 20px;
     }
-
-    header h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+    .descricao {
+      margin: 20px;
+      font-size: 1.2em;
     }
-
-    .logo img {
-      width: 150px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.2);
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      font-size: 1.5em;
-      margin: 20px 0 10px;
-    }
-
-    p {
-      font-size: 1em;
-      margin-bottom: 30px;
-      color: #ccc;
-    }
-
-    .btn {
+    .botoes a {
       display: inline-block;
       margin: 10px;
       padding: 12px 24px;
       font-size: 1em;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
+      border-radius: 25px;
       text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
+      color: #fff;
+      transition: transform 0.3s;
     }
-
-    .btn-primary {
-      background-color: #ff5722;
-      color: white;
+    .botoes a:hover {
+      transform: scale(1.1);
     }
-
-    .btn-primary:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 10px #ff5722;
-    }
-
-    .social {
-      margin: 20px 0;
-    }
-
-    .social .btn {
-      background-color: #fff;
-      color: #333;
-    }
-
-    .social .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 10px #fff;
-    }
-
+    .instagram { background: #C13584; }
+    .whatsapp { background: #25D366; }
+    .facebook { background: #3b5998; }
+    .assinar { background: #FF4500; }
     footer {
-      margin: 30px 0;
+      margin: 20px 0;
       font-size: 0.8em;
-      color: #777;
+      color: #888;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Bem-vindo à CBTV Max</h1>
-    <div class="logo">
-      <img src="cbtvmax-logo.png" alt="Logo da CBTV Max">
-    </div>
-  </header>
 
-  <main>
-    <h2>Os melhores canais para você</h2>
-    <p>Assine já e tenha acesso a milhares de conteúdos em HD, Full HD e 4K!</p>
+  <div class="topo">
+    <img src="sualogo.png" alt="Logo CBTV Max">
+  </div>
 
-    <a href="#" class="btn btn-primary">Assine Agora</a>
+  <div class="descricao">
+    <p>Os melhores canais em HD, Full HD e 4K!</p>
+    <p>Planos a partir de <strong>R$ 35,00</strong> até <strong>R$ 210,00</strong>.</p>
+  </div>
 
-    <div class="social">
-      <a href="https://instagram.com" class="btn">Instagram</a>
-      <a href="https://wa.me/seunumerowhatsapp" class="btn">WhatsApp</a>
-      <a href="https://facebook.com" class="btn">Facebook</a>
-    </div>
-  </main>
+  <div class="botoes">
+    <a href="https://seulink" class="assinar">Assine Agora</a>
+    <a href="https://instagram.com" class="instagram">Instagram</a>
+    <a href="https://wa.me/seunumerowhatsapp" class="whatsapp">WhatsApp</a>
+    <a href="https://facebook.com" class="facebook">Facebook</a>
+  </div>
 
   <footer>
     &copy; 2025 CBTV Max. Todos os direitos reservados.
   </footer>
+
 </body>
 </html>
