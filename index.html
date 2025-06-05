@@ -1,98 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CBTV Max</title>
-  <style>
-    <img src="cbtvmax-logo.png" alt="Logo CBTV Max" style="width: 150px; margin-top: 20px;" />
-     body { 
-      margin: 0;
-      padding: 0;
-      background: url('https://wallpaperaccess.com/full/1463440.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
-      text-align: center;
-    }
-
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.75);
-      padding: 2rem;
-      min-height: 100vh;
-    }
-
-    img.logo {
-      height: 100px;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 15px red;
-    }
-
-    h1 {
-      color: #ff0000;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .plan {
-      border: 2px solid #ff0000;
-      border-radius: 10px;
-      padding: 1rem;
-      margin: 1rem auto;
-      max-width: 300px;
-      background-color: rgba(255, 255, 255, 0.05);
-      transition: transform 0.2s ease, background-color 0.3s;
-    }
-
-    .plan:hover {
-      transform: scale(1.05);
-      background-color: rgba(255, 0, 0, 0.2);
-    }
-
-    .plan h2 {
-      margin: 0.5rem 0;
-      color: #fff;
-    }
-
-    .price {
-      font-size: 1.4rem;
-      font-weight: bold;
-      color: #ff5555;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CBTV Max - A Batalha Começa</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+  }
+  header {
+    background: url('avengers-endgame.jpg') no-repeat center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.5);
+  }
+  header h1 {
+    font-size: 3rem;
+    z-index: 1;
+  }
+  header img {
+    width: 150px;
+    z-index: 1;
+  }
+  button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    background: #ff0057;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    z-index: 1;
+  }
+  button:hover {
+    transform: scale(1.1);
+    background: #ff3366;
+  }
+</style>
 </head>
 <body>
-  <div class="overlay">
-    <!-- Substitua o caminho abaixo pelo da logo que você subiu no Vercel -->
-    <img src="/logo-cbtv.png" alt="Logo CBTV Max" class="logo" />
-    <h1>Assine CBTV Max</h1>
-    <p>Sua TV com filmes, séries e canais ao vivo em alta qualidade!</p>
-
-    <div class="plan">
-      <h2>Plano Mensal</h2>
-      <div class="price">R$ 35,00</div>
-    </div>
-
-    <div class="plan">
-      <h2>Plano Trimestral</h2>
-      <div class="price">R$ 95,00</div>
-    </div>
-
-    <div class="plan">
-      <h2>Plano Semestral</h2>
-      <div class="price">R$ 200,00</div>
-    </div>
-
-    <div class="plan">
-      <h2>Plano Anual</h2>
-      <div class="price">R$ 210,00</div>
-    </div>
-  </div>
+  <header>
+    <img src="cbtv-lobo.png" alt="CBTV Max Logo" />
+    <h1>“Até o último suspiro, lutaremos juntos”</h1>
+    <button>Entrar na batalha</button>
+  </header>
+  <main style="padding: 2rem; text-align: center;">
+    <h2>Prepare-se para o combate!</h2>
+    <p>Junte-se à aliança dos maiores heróis. Você está pronto para lutar ao lado do lobo?</p>
+  </main>
 </body>
 </html>
