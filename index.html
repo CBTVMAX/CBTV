@@ -3,79 +3,95 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>CBTV Max - A Batalha Começa</title>
+<title>CBTV Max - Heróis Unidos</title>
 <style>
-  body {
+  * {
+    box-sizing: border-box;
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    color: #fff;
+    padding: 0;
   }
-  header {
-    background: url('avengers-endgame.jpg') no-repeat center/cover;
-    height: 80vh;
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #0c0c0c, #1c1c1c);
+  }
+  .hero {
+    background: url('vingadores-fundo.jpg') no-repeat center center/cover;
+    position: relative;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
   }
-  header::after {
-    content: '';
+  .overlay {
     position: absolute;
-    top:0; left:0; right:0; bottom:0;
-    background: rgba(0,0,0,0.5);
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
   }
-  header h1 {
-    font-size: 3rem;
-    z-index: 1;
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
   }
-  header img {
-    width: 150px;
-    z-index: 1;
+  .logo {
+    width: 120px;
+    margin-bottom: 20px;
   }
-  .btn-hero, .btn-whatsapp {
-    margin-top: 20px;
-    padding: 15px 30px;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+    text-shadow: 2px 2px 4px #000;
+  }
+  p {
     font-size: 1.2rem;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background 0.3s ease;
-    z-index: 1;
+    margin-bottom: 30px;
+    color: #ddd;
   }
-  .btn-hero {
-    background: #ff0057;
+  .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .btn-primary {
+    background: #e74c3c;
     color: #fff;
   }
-  .btn-hero:hover {
+  .btn-primary:hover {
+    background: #c0392b;
     transform: scale(1.1);
-    background: #ff3366;
   }
   .btn-whatsapp {
-    background: #25D366;
+    background: #25d366;
     color: #fff;
-    margin-top: 10px;
   }
   .btn-whatsapp:hover {
+    background: #1ebe5b;
     transform: scale(1.1);
-    background: #1ebc5b;
   }
 </style>
 </head>
 <body>
-  <header>
-    <img src="cbtv-lobo.png" alt="CBTV Max Logo" />
+
+<div class="hero">
+  <div class="overlay"></div>
+  <div class="content">
+    <img src="cbtv-logo.png" alt="CBTV Max Logo" class="logo" />
     <h1>“Até o último suspiro, lutaremos juntos”</h1>
-    <button class="btn-hero">Entrar na batalha</button>
-    <a href="https://wa.me/557582675858" target="_blank">
-      <button class="btn-whatsapp">Assine já via WhatsApp</button>
-    </a>
-  </header>
-  <main style="padding: 2rem; text-align: center;">
-    <h2>Prepare-se para o combate!</h2>
-    <p>Junte-se à aliança dos maiores heróis. Você está pronto para lutar ao lado do lobo?</p>
-  </main>
+    <p>Assine agora e una-se à legião de heróis do CBTV Max!</p>
+    <a href="#" class="btn btn-primary">Entrar na batalha</a>
+    <a href="https://wa.me/557582675858" target="_blank" class="btn btn-whatsapp">Assine via WhatsApp</a>
+  </div>
+</div>
+
 </body>
 </html>
