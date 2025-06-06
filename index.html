@@ -1,131 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CBTV Max - Planos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CBTV Max</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0d0d0d;
+      font-family: 'Arial', sans-serif;
+      background-color: #0C1C2C;
       color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
     header {
       text-align: center;
-      padding: 40px 20px;
+      margin-top: 30px;
     }
-
-    header h1 {
-      color: #f5c518;
-      font-size: 32px;
+    .logo {
+      max-width: 300px;
     }
-
-    .planos-section {
-      background: #111;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .planos-section h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    .planos-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .plano {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 12px;
-      width: 250px;
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .plano:hover {
-      transform: scale(1.05);
-    }
-
-    .plano h3 {
-      color: #f5c518;
-      font-size: 20px;
-    }
-
-    .plano p {
+    h1 {
+      color: #FFD700;
+      font-size: 2rem;
       margin: 10px 0;
     }
-
-    .plano-destaque {
-      background: #292929;
-      border: 2px solid gold;
-    }
-
-    .plano-destaque h3 {
-      color: gold;
-    }
-
-    .whatsapp-btn {
-      display: inline-block;
+    .planos {
+      width: 90%;
+      max-width: 500px;
       margin-top: 30px;
-      background: #25D366;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .plano {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1.2rem;
       font-weight: bold;
-      font-size: 16px;
+    }
+    .mensal, .semestral {
+      border: 2px solid #00BFFF;
+    }
+    .trimestral, .anual {
+      border: 2px solid #FF0000;
+    }
+    .preco {
+      color: #fff;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-
   <header>
-   <h1>CBTV Max — A revolução começa aqui.</h1>
+    <img src="logo-cbtv-max.png" alt="CBTV Max Logo" class="logo" />
+    <h1>ESCOLHA SEU PLANO E ECONOMIZE!</h1>
   </header>
-  <div style="text-align: center; margin-bottom: 20px;">
-  <img src="cbtvmax-logo.png" alt="CBTV Max Logo" width="180" />
-  </div>
-
-  <section class="planos-section">
-    <h2>💥 Escolha seu plano e entre na legião</h2>
-    <div class="planos-container">
-
-      <div class="plano">
-        <h3>Mensal</h3>
-        <p style="font-size: 24px; font-weight: bold;">R$ 35,00</p>
-        <p>Assinatura por 30 dias</p>
-      </div>
-
-      <div class="plano">
-        <h3>Trimestral</h3>
-        <p style="font-size: 24px; font-weight: bold;">R$ 95,00</p>
-        <p>3 meses de acesso completo</p>
-      </div>
-
-      <div class="plano">
-        <h3>Semestral</h3>
-        <p style="font-size: 24px; font-weight: bold;">R$ 195,00</p>
-        <p>6 meses com conteúdo liberado</p>
-      </div>
-
-      <div class="plano plano-destaque">
-        <h3>🔥 Anual – Melhor valor!</h3>
-        <p style="font-size: 26px; font-weight: bold;">R$ 360,00</p>
-        <p>12 meses de liberdade para assistir tudo</p>
-      </div>
-
+  <section class="planos">
+    <div class="plano mensal">
+      <span>MENSAL</span>
+      <span class="preco">R$ 35,00 / mês</span>
     </div>
-
-    <a href="https://wa.me/557582675858" target="_blank" class="whatsapp-btn">Assinar via WhatsApp</a>
+    <div class="plano trimestral">
+      <span>TRIMESTRAL</span>
+      <span class="preco">R$ 95,00 a cada 3 meses</span>
+    </div>
+    <div class="plano semestral">
+      <span>SEMESTRAL</span>
+      <span class="preco">R$ 195,00 a cada 6 meses</span>
+    </div>
+    <div class="plano anual">
+      <span>ANUAL</span>
+      <span class="preco">R$ 360,00 por ano</span>
+    </div>
   </section>
-
+  <footer>
+    &copy; 2025 CBTV Max. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
